@@ -1,0 +1,7 @@
+# Runtime: Claude API client used by agent/claude_agent.py
+anthropic>=1.5,<2
+# Loads ANTHROPIC_API_KEY / KEEP_CLUSTER from .env (shell env vars still take precedence)
+python-dotenv>=1.0,<2
+
+# Tests
+pytest>=9.1,<10

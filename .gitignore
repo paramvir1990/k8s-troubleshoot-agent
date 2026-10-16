@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets -- .env holds your ANTHROPIC_API_KEY; only the template is committed
+.env
+!.env.example
+
+# Vendored skill (re-created by `make skill`)
+skills/
+
+# Runtime backups + audit log (re-created on every mutation)
+backups/*
+!backups/.gitkeep
+
+# OS / editor noise
+.DS_Store
+.vscode/
+.idea/
+
+# Local Claude Code guidance -- kept out of git
+CLAUDE.md
